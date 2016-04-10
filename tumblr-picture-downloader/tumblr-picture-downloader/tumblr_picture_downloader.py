@@ -9,19 +9,11 @@ import time
 import Queue, thread
 from requests_oauthlib import OAuth1
 import os
-
-
 									   
-
-with open("API.json") as f:
-    credentials = json.load(f)
-
-oauth = OAuth1(
-    credentials['client_key'],
-    credentials['client_secret'],
-    credentials['oauth_token'],
-    credentials['oauth_token_secret']
-)
+oauth = OAuth1('LavgbZzW1LV2skL5EMhhrEucUPikpP4Ag6KKNBJB77dojfzfaw',
+                            client_secret='6JQ50VNpMgNeUxkRHy8eXzCTg48CyK1cbLzkxrKOm1MFnV5yvH',
+                            resource_owner_key='resource_owner_key',
+                            resource_owner_secret='resource_owner_secret')
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 dest_dir = os.path.join(script_dir, 'images')
