@@ -34,8 +34,8 @@ tumblr = re.sub('[/]', '', tumblr)
 tumblr.strip()
 #print tumblr
 
-dick_url = 'http://api.tumblr.com/v2/blog/'+tumblr+'/info?api_key=LavgbZzW1LV2skL5EMhhrEucUPikpP4Ag6KKNBJB77dojfzfaw'
-info = requests.get(dick_url, auth=oauth).json()
+initial_url = 'http://api.tumblr.com/v2/blog/'+tumblr+'/info?api_key=LavgbZzW1LV2skL5EMhhrEucUPikpP4Ag6KKNBJB77dojfzfaw'
+info = requests.get(initial_url, auth=oauth).json()
 #print info["response"]["blog"]["total_posts"]
 rangeR = info["response"]["blog"]["total_posts"]
 loadingtwo = rangeR
