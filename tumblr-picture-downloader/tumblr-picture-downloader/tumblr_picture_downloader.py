@@ -98,7 +98,7 @@ for x in range (1, rangeR):
 	else:
 		while True:
 			try:
-				fuck = 2
+				
 				time = None
 				request_url = 'http://api.tumblr.com/v2/blog/'+tumblr+'/posts?api_key=LavgbZzW1LV2skL5EMhhrEucUPikpP4Ag6KKNBJB77dojfzfaw&limit=20'
 				request_url += "&offset=" + str(offset)
